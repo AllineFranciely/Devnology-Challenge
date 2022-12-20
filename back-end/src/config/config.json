@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "08091995",
+    "database": "vendas_devnology_api",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "08091995",
+    "database": "vendas_devnology_api",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "08091995",
+    "database": "vendas_devnology_api",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
