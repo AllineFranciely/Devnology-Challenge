@@ -13,5 +13,5 @@ Para iniciar a aplicação siga os seguintes comandos:
 6. Para povoar a tabela rode o comando npx sequelize db:seed:all . Nesta etapa é possível atualizar manualmente as informações da seeder antes de rodar o comando.
 7. Para rodar a aplicação execute o comando node src/server.js. Deve aparecer no console a mensagem: Escutando na porta 3001.
 
- Extra: Para reverter o seed utilize o comando npx sequelize db:seed:undo:all .
-  Para reverter a migration utilize o comando npx sequelize db:migrate:undo .
+ Extra: Para reverter o seed utilize o comando # npx sequelize db:seed:undo:all .
+  Para reverter a migration utilize o comando # npx sequelize db:migrate:undo .
