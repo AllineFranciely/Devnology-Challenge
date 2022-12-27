@@ -4,14 +4,13 @@ const baseUrlFornecedor1 =
     "http://616d6bdb6dacbb001794ca17.mockapi.io/devnology/brazilian_provider";
 
 class API {
-  static Future getProdutoFornecedor1(search) async {
-    var url = baseUrlFornecedor1 + search;
+  static Future getProdutoFornecedor1() async {
+    var url = baseUrlFornecedor1;
     return await http.get(Uri.parse(url));
   }
 }
 
 class ProdutoFornecedor1 {
-  int id;
   String nome;
   String descricao;
   String categoria;
@@ -21,7 +20,6 @@ class ProdutoFornecedor1 {
   String departamento;
 
   ProdutoFornecedor1(
-    this.id,
     this.nome,
     this.descricao,
     this.categoria,
@@ -32,8 +30,7 @@ class ProdutoFornecedor1 {
   );
 
   ProdutoFornecedor1.fromJson(Map json)
-      : id = json['show']['id'],
-        nome = json['show']['nome'],
+      : nome = json['show']['nome'],
         descricao = json['show']['descricao'],
         categoria = json['show']['categoria'],
         imagem = json['show']['imagem'],

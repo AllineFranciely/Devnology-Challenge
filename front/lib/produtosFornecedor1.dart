@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'apiFornecedor1.dart';
-import 'detailsFornecedor1.dart';
 
 class ProdutosFornecedor1ListView extends StatefulWidget {
   const ProdutosFornecedor1ListView({super.key});
@@ -15,10 +14,9 @@ class _ProdutosFornecedor1ListViewState
     extends State<ProdutosFornecedor1ListView> {
   List<ProdutoFornecedor1> produtosFornecedor1 =
       List<ProdutoFornecedor1>.empty();
-  String search = "star%20trek";
 
   _ProdutosFornecedor1ListViewState() {
-    API.getProdutoFornecedor1(search).then((response) {
+    API.getProdutoFornecedor1().then((response) {
       setState(() {
         Iterable lista = json.decode(response.body);
         produtosFornecedor1 =

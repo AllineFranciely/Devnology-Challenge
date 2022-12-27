@@ -14,10 +14,9 @@ class _ProdutosForncedor1ListViewState
     extends State<ProdutosForncedor1ListView> {
   List<ProdutoFornecedor1> produtosForncedor1 =
       List<ProdutoFornecedor1>.empty();
-  String search = "Refined Plastic Bike";
 
   _ProdutosForncedor1ListViewState() {
-    API.getProdutoFornecedor1(search).then((response) {
+    API.getProdutoFornecedor1().then((response) {
       setState(() {
         Iterable list = json.decode(response.body);
         produtosForncedor1 =
