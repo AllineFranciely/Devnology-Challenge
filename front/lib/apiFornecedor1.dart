@@ -30,11 +30,11 @@ class ProdutoFornecedor1 {
   );
 
   ProdutoFornecedor1.fromJson(Map json)
-      : nome = json['show']['nome'],
-        descricao = json['show']['descricao'],
-        categoria = json['show']['categoria'],
-        imagem = json['show']['imagem'],
-        preco = json['show']['preco'],
-        material = json['show']['material'],
-        departamento = json['show']['departamento'];
+      : nome = json['nome'],
+        descricao = json['descricao'],
+        categoria = json['categoria'],
+        imagem = json['imagem'],
+        preco = json['preco'],
+        material = json['material'],
+        departamento = json['departamento'];
 }
