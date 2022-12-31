@@ -1,7 +1,6 @@
 import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'produtosFornecedor1.dart';
+import 'Fornecedor1/produtosFornecedor1.dart';
 
 void main() => runApp(const App());
 

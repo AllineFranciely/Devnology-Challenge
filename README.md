@@ -15,3 +15,9 @@ Para iniciar a aplicação siga os seguintes comandos:
 
  Extra: Para reverter o seed utilize o comando **npx sequelize db:seed:undo:all** .
   Para reverter a migration utilize o comando **npx sequelize db:migrate:undo** .
+
+
+O front-end foi desenvolvido utilizando a linguagem dart juntamento com o flutter.
+Como onto importante do desenvolvimento de um software são as requisições à APIs externas que ligam back e front, optei por focar em fazer uma requisição e retornar os dados desejados na tela.
+
+Para rodar a aplicação basta digitar no terminal o comando **flutter run** dentro da página do front.

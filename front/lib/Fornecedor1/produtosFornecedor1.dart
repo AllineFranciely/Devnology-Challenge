@@ -29,7 +29,7 @@ class _ProdutosFornecedor1ListViewState
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Lista de produtos do Forncedor 1"),
+          title: const Text("Lista de produtos do Fornecedor 1"),
         ),
         body: ListView.builder(
             itemCount: produtosFornecedor1.length,
